@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Toast" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cg6-I6-y4K">
+                                <rect key="frame" x="43" y="49" width="235" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="235" id="nBk-aL-8MD"/>
+                                    <constraint firstAttribute="height" constant="84" id="zTz-3j-Klz"/>
+                                </constraints>
+                                <string key="text">This is a sample application
+Which display message like Toast in Android</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="5gZ-hM-ouK">
+                                <rect key="frame" x="16" y="482" width="117" height="55"/>
+                                <color key="backgroundColor" red="0.30283251356729657" green="0.8223443081285241" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="8AX-6f-9o8"/>
+                                    <constraint firstAttribute="width" constant="159" id="Nsw-oB-Wuw"/>
+                                </constraints>
+                                <state key="normal" title="Long message"/>
+                                <connections>
+                                    <action selector="longClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MVv-nc-d4x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="h2N-pX-Vs7">
+                                <rect key="frame" x="192" y="482" width="121" height="55"/>
+                                <color key="backgroundColor" red="0.30283251360000002" green="0.82234430810000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="121" id="1JC-1a-Caq"/>
+                                    <constraint firstAttribute="height" constant="55" id="azE-Is-moU"/>
+                                </constraints>
+                                <state key="normal" title="Short message"/>
+                                <connections>
+                                    <action selector="shortClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YMQ-7J-ebW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5gZ-hM-ouK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-64.5" id="3wg-uc-6Jt"/>
+                            <constraint firstItem="cg6-I6-y4K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4ce-FL-gA9"/>
+                            <constraint firstItem="h2N-pX-Vs7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="92.5" id="O14-hh-eU0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="h2N-pX-Vs7" secondAttribute="bottom" constant="31" id="bka-2y-KzA"/>
+                            <constraint firstItem="cg6-I6-y4K" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="29" id="dfa-wP-D0o"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5gZ-hM-ouK" secondAttribute="bottom" constant="31" id="gbY-fa-upB"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="114.375" y="123.59154929577466"/>
+        </scene>
+    </scenes>
+</document>
